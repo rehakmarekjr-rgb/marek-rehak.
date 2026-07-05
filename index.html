@@ -22,25 +22,88 @@
 <p class="p3"><span class="s1">&lt;head&gt;</span></p>
 <p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></p>
 <p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;Moje Portfólio&lt;/title&gt;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;Portfolio - Marek Rehák&lt;/title&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>@font-face {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>font-family: 'Cal Sans';</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>font-style: normal;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>font-display: swap;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: 400;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>src: url(https://cdn.jsdelivr.net/fontsource/fonts/cal-sans@latest/latin-400-normal.woff2) format('woff2');</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>body {<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #ffffff; /* Čisté biele pozadie */</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0;<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>padding: 40px 20px;<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>font-family: 'Cal Sans', sans-serif;<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>header {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 50px;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>h1 {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>color: #000000; /* Čierny text */</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 2.5rem;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>letter-spacing: -0.03em;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>text-transform: uppercase;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>.galeria {<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>display: grid;<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>gap: 15px;<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>max-width: 1200px;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0 auto;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>.kresba {<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>align-items: center;<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>justify-content: center;<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p4"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>.kresba img {<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>width: 100%;<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>height: auto;<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>object-fit: contain;<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
 <p class="p3"><span class="s1">&lt;/head&gt;</span></p>
 <p class="p3"><span class="s1">&lt;body&gt;</span></p>
+<p class="p4"><span class="s1"></span><br></p>
 <p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>&lt;header&gt;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h1&gt;Ahoj, ja som Tvoje Meno&lt;/h1&gt;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;Vitaj na mojom programátorskom portfóliu.&lt;/p&gt;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h1&gt;Portfolio: Marek Rehák&lt;/h1&gt;</span></p>
 <p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</span></p>
 <p class="p4"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
 <p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>&lt;main&gt;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Moje Projekty&lt;/h2&gt;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>&lt;ul&gt;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;strong&gt;Projekt 1:&lt;/strong&gt; Popis prvého skvelého projektu.&lt;/li&gt;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;strong&gt;Projekt 2:&lt;/strong&gt; Ďalšia aplikácia, ktorú som vytvoril.&lt;/li&gt;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="galeria"&gt;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="kresba"&gt;&lt;img src="1.png" alt=""&gt;&lt;/div&gt;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="kresba"&gt;&lt;img src="2.png" alt=""&gt;&lt;/div&gt;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="kresba"&gt;&lt;img src="3.png" alt=""&gt;&lt;/div&gt;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="kresba"&gt;&lt;img src="4.png" alt=""&gt;&lt;/div&gt;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="kresba"&gt;&lt;img src="5.png" alt=""&gt;&lt;/div&gt;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="kresba"&gt;&lt;img src="6.png" alt=""&gt;&lt;/div&gt;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="kresba"&gt;&lt;img src="7.png" alt=""&gt;&lt;/div&gt;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="kresba"&gt;&lt;img src="8.png" alt=""&gt;&lt;/div&gt;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="kresba"&gt;&lt;img src="9.png" alt=""&gt;&lt;/div&gt;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="kresba"&gt;&lt;img src="10.png" alt=""&gt;&lt;/div&gt;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="kresba"&gt;&lt;img src="11.png" alt=""&gt;&lt;/div&gt;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="kresba"&gt;&lt;img src="12.png" alt=""&gt;&lt;/div&gt;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="kresba"&gt;&lt;img src="13.png" alt=""&gt;&lt;/div&gt;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="kresba"&gt;&lt;img src="14.png" alt=""&gt;&lt;/div&gt;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="kresba"&gt;&lt;img src="15.png" alt=""&gt;&lt;/div&gt;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="kresba"&gt;&lt;img src="16.png" alt=""&gt;&lt;/div&gt;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="kresba"&gt;&lt;img src="17.png" alt=""&gt;&lt;/div&gt;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="kresba"&gt;&lt;img src="18.png" alt=""&gt;&lt;/div&gt;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="kresba"&gt;&lt;img src="19.png" alt=""&gt;&lt;/div&gt;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
 <p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</span></p>
 <p class="p4"><span class="s1"></span><br></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>&lt;footer&gt;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;© 2026 - Vytvorené s láskou k webu&lt;/p&gt;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</span></p>
 <p class="p3"><span class="s1">&lt;/body&gt;</span></p>
 <p class="p3"><span class="s1">&lt;/html&gt;</span></p>
 </body>
