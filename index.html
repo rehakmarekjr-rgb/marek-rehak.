@@ -5,7 +5,6 @@ HTML
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Marek Rehák</title>
-    
     <style>
         @font-face {
             font-family: 'Cal Sans';
@@ -18,28 +17,28 @@ HTML
         body { 
             background-color: #ffffff; 
             margin: 0; 
-            padding: 40px 20px; 
+            padding: 50px 20px; 
             font-family: 'Cal Sans', sans-serif; 
         }
 
         header {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 60px;
         }
 
         h1 {
             color: #000000; 
-            font-size: 2.5rem;
-            letter-spacing: -0.03em;
+            font-size: 2.3rem;
+            /* Výrazne zväčšený kerning (rozostupy medzi písmenami) */
+            letter-spacing: 0.15em; 
             margin: 0;
-            /* Zrušený caps lock – text sa zobrazí tak, ako je napísaný */
             text-transform: none; 
         }
 
         .galeria { 
             display: grid; 
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
-            gap: 15px; 
+            gap: 20px; 
             max-width: 1200px;
             margin: 0 auto;
         }
@@ -60,7 +59,6 @@ HTML
 <body>
 
     <header>
-        <!-- Pridaná medzera za dvojbodku a upravené na malé písmená -->
         <h1>Portfolio: Marek Rehák</h1>
     </header>
     
