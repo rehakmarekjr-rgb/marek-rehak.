@@ -23,7 +23,6 @@
 
         header {
             text-align: center;
-            /* Medzera medzi logom a kresbami bola zväčšená na 120px */
             margin-bottom: 120px;
         }
 
@@ -34,32 +33,41 @@
             margin: 0 auto;
         }
 
+        /* Nové nastavenie pre Masonry efekt */
         .galeria { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
-            gap: 20px; 
+            column-count: 3; /* Počet stĺpcov vedľa seba */
+            column-gap: 20px; /* Medzera medzi stĺpcami */
             max-width: 1200px;
             margin: 0 auto;
         }
 
         .kresba { 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
+            display: inline-block; /* Dôležité, aby sa obrázky nelámali napoly */
+            width: 100%;
+            margin-bottom: 20px; /* Medzera pod každým obrázkom */
         }
 
         .kresba img { 
             width: 100%; 
             height: auto; 
+            display: block;
             object-fit: contain; 
             border-radius: 12px; 
+        }
+
+        /* Prispôsobenie pre menšie obrazovky (mobily) */
+        @media (max-width: 900px) {
+            .galeria { column-count: 2; }
+        }
+        @media (max-width: 600px) {
+            .galeria { column-count: 1; }
         }
     </style>
 </head>
 <body>
 
     <header>
-        <img src="logo1.png" alt="Logo" class="web-logo">
+        <img src="logo.png" alt="Logo" class="web-logo">
     </header>
     
     <main>
@@ -68,7 +76,7 @@
             <div class="kresba"><img src="Prace/2.png" alt=""></div>
             <div class="kresba"><img src="Prace/3.png" alt=""></div>
             <div class="kresba"><img src="Prace/4.png" alt=""></div>
-            <div class="kresba"><img src="Prace/5.jpg" alt=""></div>
+            <div class="kresba"><img src="Prace/5.png" alt=""></div>
             <div class="kresba"><img src="Prace/6.png" alt=""></div>
             <div class="kresba"><img src="Prace/7.png" alt=""></div>
             <div class="kresba"><img src="Prace/8.png" alt=""></div>
